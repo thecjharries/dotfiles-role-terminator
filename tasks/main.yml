@@ -1,0 +1,18 @@
+---
+- name: "Ensure {{ config_dir }} exists"
+  file:
+    path: "{{ config_dir }}"
+    state: directory
+    owner: "{{ owning_user }}"
+    group: "{{ owning_group }}"
+  with_items:
+    - "{{ config_dir | dirname }}"
+    - "{{ config_dir }}"
+    - "{{ config_dir }}/terminator"
+
+- name: "Template terminator config"
+  include_role:
+    name: dotfiles-generic-template-role
+  vars:
+    template_root: "{{ config_dir }}"
+    template_path: "terminator/config"
