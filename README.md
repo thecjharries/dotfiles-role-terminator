@@ -1,6 +1,8 @@
-# `dotfiles-terminator-role`
+# `dotfiles-role-terminator`
+# `dotfiles-role-terminator`
 
-[![Build Status](https://travis-ci.org/thecjharries/dotfiles-terminator-role.svg?branch=master)](https://travis-ci.org/thecjharries/dotfiles-terminator-role)
+[![Build Status](https://travis-ci.org/thecjharries/dotfiles-role-terminator.svg?branch=master)](https://travis-ci.org/thecjharries/dotfiles-role-terminator)
+[![Build Status](https://travis-ci.org/thecjharries/dotfiles-role-terminator.svg?branch=master)](https://travis-ci.org/thecjharries/dotfiles-role-terminator)
 
 ## Requirements
 
@@ -30,9 +32,12 @@ needed_packages:
 
 ```yml
 ---
-- src: git+https://github.com/thecjharries/dotfiles-common-software-role.git
-- src: git+https://github.com/thecjharries/dotfiles-package-installer-role.git
-- src: git+https://github.com/thecjharries/dotfiles-generic-template-role.git
+- src: git+https://github.com/thecjharries/dotfiles-role-common-software.git
+- src: git+https://github.com/thecjharries/dotfiles-role-common-software.git
+- src: git+https://github.com/thecjharries/dotfiles-role-package-installer.git
+- src: git+https://github.com/thecjharries/dotfiles-role-package-installer.git
+- src: git+https://github.com/thecjharries/dotfiles-role-generic-template.git
+- src: git+https://github.com/thecjharries/dotfiles-role-generic-template.git
 ```
 
 ## Example Playbook
@@ -42,7 +47,8 @@ needed_packages:
 - hosts: all
 
   roles:
-    - role: dotfiles-terminator-role
+    - role: dotfiles-role-terminator
+    - role: dotfiles-role-terminator
 ```
 
 ## License
