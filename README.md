@@ -1,7 +1,7 @@
 # `dotfiles-role-terminator`
 
 [![Build Status](https://travis-ci.org/thecjharries/dotfiles-role-terminator.svg?branch=master)](https://travis-ci.org/thecjharries/dotfiles-role-terminator)
-[![GitHub release](https://img.shields.io/github/release/thecjharries/dotfiles-role-terminator.svg)](https://github.com/thecjharries/dotfiles-role-terminator)
+[![GitHub tag](https://img.shields.io/github/tag/thecjharries/dotfiles-role-terminator.svg)](https://github.com/thecjharries/dotfiles-role-terminator)
 
 ## Requirements
 
